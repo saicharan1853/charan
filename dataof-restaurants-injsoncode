@@ -1,0 +1,63 @@
+```json
+{
+  "Welcome_Restaurants": [
+    {
+      "City": "Harmony Haven",
+      "Restaurants": [
+        {"Name": "Cultural Feast Bistro", "Cuisine": "International Fusion", "Menu": [{"Dish": "Global Medley", "Price": "$18.99"}, {"Dish": "Harmony Delight Salad", "Price": "$12.50"}]},
+        {"Name": "Market Square Grill", "Cuisine": "Local Delicacies", "Menu": [{"Dish": "Town Square Stew", "Price": "$14.75"}, {"Dish": "Fresh Catch Platter", "Price": "$22.50"}]},
+        {"Name": "Parkside Pizzeria", "Cuisine": "Italian", "Menu": [{"Dish": "Margherita Pizza", "Price": "$15.99"}, {"Dish": "Pesto Pasta Delight", "Price": "$12.95"}]}
+      ]
+    },
+    {
+      "City": "Cascade City",
+      "Restaurants": [
+        {"Name": "Waterfall Eats", "Cuisine": "Fresh Seafood", "Menu": [{"Dish": "Cascade Catch Feast", "Price": "$28.99"}, {"Dish": "Seafood Platter Extravaganza", "Price": "$35.50"}]},
+        {"Name": "Adventure Cafe", "Cuisine": "Casual Dining", "Menu": [{"Dish": "Explorer's Burger", "Price": "$16.75"}, {"Dish": "Hiker's Hotpot", "Price": "$19.95"}]},
+        {"Name": "Mist View Restaurant", "Cuisine": "Eclectic Cuisine", "Menu": [{"Dish": "Mistful Mushroom Risotto", "Price": "$22.99"}, {"Dish": "Foggy Fruits Flambe", "Price": "$18.50"}]}
+      ]
+    },
+    {
+      "City": "Serenity Springs",
+      "Restaurants": [
+        {"Name": "Hot Springs Bistro", "Cuisine": "Wellness Cuisine", "Menu": [{"Dish": "Zen Zucchini Noodles", "Price": "$14.99"}, {"Dish": "Healing Herb Infusion Soup", "Price": "$10.95"}]},
+        {"Name": "Lakefront Dining", "Cuisine": "Continental", "Menu": [{"Dish": "Lakeview Lamb Chops", "Price": "$24.75"}, {"Dish": "Serenade Salmon", "Price": "$28.50"}]},
+        {"Name": "Tranquil Taste Buffet", "Cuisine": "International Buffet", "Menu": [{"Dish": "Buffet Bliss Selection", "Price": "$19.99"}, {"Dish": "Springside Sweets Display", "Price": "$15.95"}]}
+      ]
+    },
+    {
+      "City": "Radiant Ridge",
+      "Restaurants": [
+        {"Name": "Historical Eats Lounge", "Cuisine": "Historic Recipes", "Menu": [{"Dish": "Antique Apple Pie", "Price": "$8.99"}, {"Dish": "Ridge Roast Chicken", "Price": "$16.50"}]},
+        {"Name": "Arts & Appetizers", "Cuisine": "Artisanal Dishes", "Menu": [{"Dish": "Canvas Crostini", "Price": "$12.75"}, {"Dish": "Palette Pasta", "Price": "$14.95"}]},
+        {"Name": "Nightlife Nosh Nook", "Cuisine": "Late-Night Bites", "Menu": [{"Dish": "Moonlight Munchies Platter", "Price": "$22.99"}, {"Dish": "Starlit Sandwiches", "Price": "$9.95"}]}
+      ]
+    },
+    {
+      "City": "Blossomville",
+      "Restaurants": [
+        {"Name": "Floral Fusion Bistro", "Cuisine": "Flower-Inspired Cuisine", "Menu": [{"Dish": "Rose Petal Pasta", "Price": "$16.99"}, {"Dish": "Blossomville Bloom Salad", "Price": "$13.50"}]},
+        {"Name": "Botanical Bites Cafe", "Cuisine": "Vegetarian Delights", "Menu": [{"Dish": "Garden Greens Wrap", "Price": "$10.75"}, {"Dish": "Herbivore's Delight Pizza", "Price": "$14.95"}]},
+        {"Name": "Artistic Palate Restaurant", "Cuisine": "Creative Cuisine", "Menu": [{"Dish": "Palette of Flavors Platter", "Price": "$18.99"}, {"Dish": "Canvas Cupcake Creation", "Price": "$8.50"}]}
+      ]
+    },
+    {
+      "City": "Skyline Shores",
+      "Restaurants": [
+        {"Name": "Beachfront Bites", "Cuisine": "Seafood Paradise", "Menu": [{"Dish": "Sunset Seafood Paella", "Price": "$29.99"}, {"Dish": "Beachside Crab Cakes", "Price": "$24.50"}]},
+        {"Name": "Sunny Shore Sweets", "Cuisine": "Dessert Haven", "Menu": [{"Dish": "Shoreline Sundae", "Price": "$12.75"}, {"Dish": "Tropical Tart Temptation", "Price": "$15.95"}]},
+        {"Name": "Surf & Turf Grill", "Cuisine": "Oceanic Flavors", "Menu": [{"Dish": "Waveside Wagyu Steak", "Price": "$34.99"}, {"Dish": "Surf & Turf Fusion Platter", "Price": "$28.50"}]}
+      ]
+    },
+    {
+      "City": "Eternal Echo",
+      "Restaurants": [
+        {"Name": "Historic Heights Dining", "Cuisine": "Time-Honored Recipes", "Menu": [{"Dish": "Echoing Elegance Entree", "Price": "$18.99"}, {"Dish": "Ancient Apple Tart", "Price": "$10.50"}]},
+        {"Name": "Ancient Eats Tavern", "Cuisine": "Archaeological Delights", "Menu": [{"Dish": "Dino Delight Burger", "Price": "$16.75"}, {"Dish": "Sphinx Special Stew", "Price": "$20.95"}]},
+        {"Name": "Culture Cuisine Corner", "Cuisine": "Cultural Specialties", "Menu": [{"Dish": "Heritage Hotpot", "Price": "$22.99"}, {"Dish": "Tribal Treats Platter", "Price": "$18.50"}]}
+      ]
+    },
+    {
+      "City": "Cerulean Cove",
+      "Restaurants": [
+        {"Name": "Island Infusion", "Cuisine": "Tropical Fusion", "Menu": [{"Dish": "Island Indulgence Sushi", "Price": "$25.99"}, {"Dish": "T
