@@ -1,6 +1,6 @@
 # Task 1: Create Folder and Text File
 mkdir Inf43Hw2
-cd C:/Users/saich/nadhi/softwarelab/Inf43Hw2/
+cd Inf43Hw2
 echo "saicharan BT22CSE107" > file1.txt
 
 #C:/Users/saich/nadhi/softwarelab/Inf43Hw2/.git/
@@ -93,6 +93,7 @@ git log -p > git_log_partB.txt
 #36
 
 # Task 36: Push to GitHub
+git remote -v #to check the remote repo
 git remote add origin https://github.com/saicharan1853/charan.git
 git branch -M main  # If not using master branch
 git fetch origin
@@ -100,3 +101,6 @@ git pull origin main # git pull origin main --allow-unrelated-histories
 git add .
 git commit -m "Resolved merge conflicts."
 git push -u origin main
+git fetch origin main
+git checkout main
+git merge --allow-unrelated-histories origin/main
