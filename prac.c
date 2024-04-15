@@ -15,71 +15,6 @@ typedef struct node {
 } node;
 
 node* array[8];
-node* heap = NULL; // Global pointer to the start of the heap
-
-void initializeHeap() {
-    heap = (node*)malloc(HEAP_SIZE);
-    if (heap == NULL) {
-        fprintf(stderr, "Heap initialization failed.\n");
-        exit(EXIT_FAILURE);
-    }
-    heap->size = HEAP_SIZE - sizeof(node); // Update size of heap
-    heap->next_1 = NULL;
-    heap->next_2 = NULL;
-    heap->next_3 = NULL;
-}
-
-void* myMalloc(size_t size) {
-    node* current = heap;
-    node* prev = NULL;
-
-    while (current != NULL) {
-        if (current->size >= size) {
-            if (current->size > size + sizeof(node)) {
-                node* newnode = (node*)((char*)current + sizeof(node) + size);
-                newnode->size = current->size - size - sizeof(node);
-                newnode->next_1 = NULL;
-                newnode->next_2 = NULL;
-                newnode->next_3 = NULL;
-                current->size = size;
-                current->next_1 = newnode;
-            }
-
-            if (prev == NULL) {
-                heap = current->next_1;
-            } else {
-                prev->next_1 = current->next_1;
-            }
-
-            return (void*)(current + 1); // Return pointer after node
-        }
-
-        prev = current;
-        current = current->next_1;
-    }
-
-    fprintf(stderr, "Memory allocation failed. Insufficient space.\n");
-    return NULL;
-}
-
-void myFree(void* ptr) {
-    if (ptr == NULL) {
-        return;
-    }
-
-    node* n = (node*)ptr - 1;
-    n->next_1 = heap;
-    heap = n;
-}
-
-void printHeap() {
-    node* current = heap;
-
-    while (current != NULL) {
-        printf("node: %p, Size: %lu\n", current, current->size);
-        current = current->next_1;
-    }
-}
 
 //function to display reference count and freed size
 void print_node(int i)
@@ -380,40 +315,7 @@ void sweep_method()
 }
 
 int main() {
-    initializeHeap();
-
-    // Allocate memory nodes
-    void* ptr1 = myMalloc(100);
-    void* ptr2 = myMalloc(200);
-    void* ptr3 = myMalloc(150);
-
-    // Display the current state of the heap
-    printf("Heap after allocations:\n");
-    printHeap();
-
-    // Free memory nodes
-    myFree(ptr2);
-
-    // Display the current state of the heap after deallocation
-    printf("\nHeap after deallocation:\n");
-    printHeap();
-
-    // Allocate more memory
-    void* ptr4 = myMalloc(50);
-
-    // Display the final state of the heap
-    printf("\nHeap after additional allocation:\n");
-    printHeap();
-
-    // Free all memory
-    myFree(ptr1);
-    myFree(ptr3);
-    myFree(ptr4);
-
-    // Display the empty heap
-    printf("\nHeap after freeing all memory:\n");
-    printHeap();
-
+    
     // Additional part of the main function for graph operations and garbage collection
 
     int val[] = {1,2, 3, 5, 7, 8, 9, 10};
