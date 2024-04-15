@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h> // Add for bool type
-
-#define HEAP_SIZE 1000
+#include <stdbool.h> 
 
 typedef struct node {
     int data;
@@ -200,76 +198,6 @@ void adjacency_Matrix()
 	}
 }
 // marks true if node is active, otherwise false
-void mark_the_Nodes(node*root,int i,int j)
-{
-    node *current, *pre;
-
-    current = root;
-        
-    while (current != NULL) 
-    {
-  
-        if (current->next_1== NULL) 
-        {
-            current->mark=true;
-            current = current->next_2;
-        }   
-        else 
-        {
-            pre = current->next_1;
-            while ((pre->next_2 != NULL) && (pre->next_2 != current))
-            {
-            	pre = pre->next_2;
-			}
-                
-            if (pre->next_2 == NULL) 
-            {
-                pre->next_2 = current;
-                current = current->next_1;
-            }
-            else 
-            {
-                pre->next_2 = NULL;
-                current->mark=true;
-                current = current->next_2;
-            } 
-        }
-    }   
-    
-    current = root;
-        
-    while (current != NULL) 
-    {
-  
-        if (current->next_1== NULL) 
-        {
-            current->mark=true;
-            current = current->next_3;
-        }   
-        else 
-        {
-            pre = current->next_1;
-            while ((pre->next_3 != NULL) && (pre->next_3 != current))
-            {
-            	pre = pre->next_3;
-			}
-                
-            if (pre->next_3 == NULL) 
-            {
-                pre->next_3 = current;
-                current = current->next_1;
-            }
-            else 
-            {
-                pre->next_3 = NULL;
-                current->mark=true;
-                current = current->next_3;
-            } 
-        }
-    }  
-    
-}
-// mark method
 void mark_method(node* root)
 {
 	
