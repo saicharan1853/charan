@@ -24,21 +24,21 @@ void print_node(int i)
 
 
 //set edges between nodes
-void edgeSet(int so,int dest1,int dest2,int dest3)
+void connectedges(int start,int dest1,int dest2,int dest3)
 {
 	if(dest1!=-1)
 	{
-		array[so]->next_1=array[dest1];
+		array[start]->next_1=array[dest1];
 		array[dest1]->referenceCount+=1;
 	}
 	if(dest2!=-1)
 	{
-		array[so]->next_2=array[dest2];
+		array[start]->next_2=array[dest2];
 		array[dest2]->referenceCount+=1;
 	}
 	if(dest3!=-1)
 	{
-		array[so]->next_3=array[dest3];
+		array[start]->next_3=array[dest3];
 		array[dest3]->referenceCount+=1;
 	}
 	
@@ -336,11 +336,11 @@ int main() {
     node* root_2 = array[0];
     array[0]->referenceCount += 1;
 
-    edgeSet(0, 1, 6, 7);
-    edgeSet(2, 5, 7, -1);
-    edgeSet(3, 0, -1, -1);
-    edgeSet(4, 0, 5, -1);
-    edgeSet(5, 6, -1, -1);
+    connectedges(0, 1, 6, 7);
+    connectedges(2, 5, 7, -1);
+    connectedges(3, 0, -1, -1);
+    connectedges(4, 0, 5, -1);
+    connectedges(5, 6, -1, -1);
 
     printf("\nAll nodes through Root-1:\n");
     print_allNodes(root_1);
