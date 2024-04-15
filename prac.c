@@ -8,7 +8,6 @@ typedef struct node {
     int data;
     bool mark; // for marking the nodes to use mark and sweep method
     int referenceCount; // reference count method
-    size_t size; // Add size member
     struct node* next_1;
     struct node* next_2;
     struct node* next_3;
